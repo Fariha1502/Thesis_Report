@@ -1,0 +1,13 @@
+\chapter{Discussions}
+\label{chap:discussions}
+\section{Threats of Validity}
+\label{sec:threats}
+The major threat to the internal validity of our analysis is the correctness of manual categorization of performance bug types. To reduce this threat, we carefully performed all these processes and cross-checked fix types in StackOverflow and Unity documentation for the correctness. The major threat to the external validity of our analysis is that our findings may be project-specific of our analysis dataset. To reduce this threat, we used projects with sufficient commit history and are well maintained.
+
+
+\section{Take Away from the Analysis}
+\label{sec:takeway}
+Unity performance bug taxonomy shows different bug categories that can be useful for bug detection and repair suggestions. Our analysis also identifies several programming language features such as using readonly, const that can be helpful for performance improvement. AST-based diff analysis identifies that Unity callback methods are prone to performance bugs. So, developers should give extra attention while adding code to the callback methods. Code change empirical data also indicates that Unity performance bugs are complex in nature and require to change in multiple code locations. Finally, commit analysis identifies that performance bugs can happen due to Unity GameObject Asset/Prefab Issues. 
+
+
+
